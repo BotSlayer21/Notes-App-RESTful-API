@@ -1,0 +1,140 @@
+/* Normalize styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Main content */
+main {
+  padding: 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+/* Note section */
+#note {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Add note form */
+.add-note-form-container {
+  margin-bottom: 1rem;
+}
+
+.add-note-form-container h2 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.add-note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+#newNoteName,
+#newNoteDescription,
+#name {
+  padding: 1rem;
+  border: 1px solid #3f51b5;
+  border-radius: 8px;
+}
+
+.add-note-form button {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Search bar */
+.search-bar-container {
+  margin-bottom: 1rem;
+}
+
+.search-bar-container label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.search-form button {
+  align-self: flex-end;
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Note list */
+.note-list-container {
+  flex-grow: 1;
+  border: 1px solid #3f51b5;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.placeholder {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .add-note-form-container,
+  .search-bar-container,
+  .note-list-container {
+    flex: 1;
+  }
+}
+
